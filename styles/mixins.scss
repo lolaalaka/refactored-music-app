@@ -1,0 +1,88 @@
+@mixin ham12 {
+  width: 25px;
+  height: 2px;
+  background-color: whitesmoke;
+  margin-top: 3px;
+}
+
+@mixin ham3 {
+  width: 15px;
+  height: 2px;
+  background-color: whitesmoke;
+  margin-top: 3px;
+}
+
+@mixin wave {
+  width: 150vw;
+  height: 100%;
+  border-radius: 50%;
+  transform-origin: 50% 49%;
+}
+
+@mixin whiteBg {
+  background-color: whitesmoke;
+}
+
+@mixin buttn {
+  background-color: inherit;
+  outline: none;
+  border: none;
+}
+
+@mixin hidetext {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin wave {
+  width: 150vw;
+  height: 300%;
+  border-radius: 50%;
+  transform-origin: 50% 49%;
+
+  @include bp(smallphone) {
+    width: 600px;
+    height: 700px;
+  }
+
+  @include bp(midphone) {
+    width: 900px;
+    height: 1000px;
+  }
+
+  @include bp(tablet) {
+    width: 1200px;
+    height: 1300px;
+  }
+}
+
+@mixin bp($point) {
+  $smallphone: "(min-width: 250px) and (max-width: 400px)";
+  $midphone: "(min-width: 401px) and (max-width: 600px)";
+  $tablet: "(min-width: 601px) and (max-width: 900px)";
+  $phonecombine: "(min-width: 250px) and (max-width: 700px)";
+  $desktop: "(min-width: 901px) and (max-width: 1024px)";
+
+  @if $point == smallphone {
+    @media #{$smallphone} {
+      @content;
+    }
+  } @else if $point == midphone {
+    @media #{$midphone} {
+      @content;
+    }
+  } @else if $point == tablet {
+    @media #{$tablet} {
+      @content;
+    }
+  } @else if $point == phonecombine {
+    @media #{$phonecombine} {
+      @content;
+    }
+  } @else if $point == desktop {
+    @media #{$desktop} {
+      @content;
+    }
+  }
+}
