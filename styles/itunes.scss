@@ -106,12 +106,21 @@ body {
   font-size: 15px;
   background-color: inherit;
   color: white;
+
+  @include bp(phonecombine) {
+    height: 70px;
+    font-size: 20px;
+  }
 }
 .icon {
   color: rgba(252, 250, 250, 0.534);
   position: absolute;
   top: 15px;
   left: 10px;
+
+  @include bp(phonecombine) {
+    top: 30px;
+  }
 }
 
 .linedivider {
@@ -247,13 +256,13 @@ body {
 }
 
 .media-play {
-  // display: block;
+  visibility: hidden;
   background-color: inherit;
   border-radius: 5%;
   width: 40vw;
-  height: fit-content;
+  height: 400px;
   position: fixed;
-  top: 100px;
+  top: 120px;
   left: 53%;
   animation: slide 1s ease-in alternate;
   background-color: inherit;
@@ -441,6 +450,7 @@ video::-webkit-media-controls-panel {
 .video-media-play {
   width: 100%;
   margin-bottom: 20px;
+  visibility: hidden;
 
   @include bp(tablet) {
     margin-bottom: 30px;

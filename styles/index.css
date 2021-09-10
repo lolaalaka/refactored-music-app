@@ -15,6 +15,7 @@ body {
   width: 100vw;
   height: 100vh;
   max-width: 100%;
+  overflow: hidden;
 }
 
 .header-container {
@@ -34,7 +35,7 @@ body {
   width: -moz-fit-content;
   width: fit-content;
   padding: 20px 0 0 25px;
-  z-index: 2;
+  z-index: 30;
 }
 
 .header-container .ham-con .ham1,
@@ -80,7 +81,7 @@ body {
   transition: -webkit-transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
-  z-index: 1;
+  z-index: 25;
 }
 
 .nav.expand {
@@ -91,6 +92,7 @@ body {
   .nav {
     width: 100vw;
     max-width: 100%;
+    background-color: #242323;
   }
 }
 
@@ -136,19 +138,19 @@ body {
   display: -ms-grid;
   display: grid;
       grid-template-areas: "trackArt trackWord trackLine navigation";
-  padding: 10px 0 0 50%;
+  padding: 10px 0 0 55%;
 }
 
 @media (min-width: 250px) and (max-width: 400px) {
   .small-content {
-    padding: 5px 0 0 30%;
+    padding: 5px 0 0 35%;
         grid-template-areas: "trackArt trackWord" "navigation navigation";
   }
 }
 
 @media (min-width: 401px) and (max-width: 600px) {
   .small-content {
-    padding: 5px 0 0 40%;
+    padding: 5px 0 0 50%;
         grid-template-areas: "trackArt trackWord" "navigation navigation";
   }
 }
@@ -181,6 +183,9 @@ body {
   -ms-grid-column: 2;
   grid-area: trackWord;
   color: whitesmoke;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .small-content .line {
@@ -208,6 +213,7 @@ body {
   -ms-grid-row: 1;
   -ms-grid-column: 4;
   grid-area: navigation;
+  width: 140px;
 }
 
 .small-content .navigation .btn,
@@ -231,9 +237,22 @@ body {
           transform: scale(1.2);
 }
 
+@media (min-width: 250px) and (max-width: 400px) {
+  .small-content .navigation .btn,
+  .small-content .navigation .list-icon {
+    font-size: 15px;
+  }
+}
+
 .small-content .navigation .list-icon {
-  padding-left: 30px;
+  padding-left: 20px;
   font-size: 25px;
+}
+
+@media (min-width: 250px) and (max-width: 400px) {
+  .small-content .navigation .list-icon {
+    font-size: 20px;
+  }
 }
 
 .small-content .navigation .prev {
@@ -248,14 +267,7 @@ body {
 }
 
 .circle-container {
-  position: absolute;
-  left: 44%;
-  width: 40%;
-  top: 150px;
   visibility: hidden;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
 }
 
 .circle-container .text-container {
@@ -285,33 +297,33 @@ body {
   margin-top: 30px;
 }
 
-.circle-container .circle {
+.circle {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  margin: 150px auto 0 auto;
+  margin: 200px auto 0 auto;
   background-color: whitesmoke;
   -webkit-transition: all 1s;
   transition: all 1s;
 }
 
-.circle-container .circle:hover {
-  background-image: linear-gradient(120deg, #93b4ff 0%, #e7686c 100%);
+.circle:hover {
+  background-image: linear-gradient(120deg, #81a6fc 0%, #f76267 100%);
   -webkit-transform: translateY(-30px);
           transform: translateY(-30px);
 }
 
-.circle-container .circle a {
+.circle a {
   text-decoration: none;
   color: black;
 }
 
-.circle-container .circle p {
+.circle p {
   text-align: center;
   padding: 10px 0;
 }
 
-.circle-container .circle p:hover {
+.circle p:hover {
   color: white;
 }
 
@@ -490,11 +502,37 @@ body {
   overflow: hidden;
 }
 
+.svg-icon {
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #1b1b1b;
+}
+
+.svg-icon path:hover,
+.svg-icon polygon:hover,
+.svg-icon rect:hover {
+  fill: whitesmoke;
+}
+
+.svg-icon circle {
+  stroke: #1b1b1b;
+  stroke-width: 1;
+}
+
+.svg-icon circle:hover {
+  fill: whitesmoke;
+}
+
 .playlist-player {
   max-width: 100%;
   height: 100vh;
   position: absolute;
-  z-index: 20;
+  z-index: 40;
   right: 0;
   top: 0;
   width: 50%;
@@ -559,13 +597,15 @@ body {
 
 .playlist-player .top .modal-close {
   position: absolute;
-  right: 5%;
-  top: 1%;
-  font-size: 25px;
-  color: rgba(58, 57, 57, 0.89);
+  right: 0;
+  top: 0;
   background-color: inherit;
   outline: none;
   border: none;
+}
+
+.playlist-player .top .modal-close:hover {
+  background-color: #f80d0d;
 }
 
 .playlist-player .track-art {

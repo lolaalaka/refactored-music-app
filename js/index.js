@@ -307,3 +307,5 @@ const centerOperation = () => {
 };
 
 centerOperation();
+
+alert('click on "PLAYER" to discover some of your favorite songs :)');

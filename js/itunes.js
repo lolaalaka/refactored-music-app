@@ -1,3 +1,5 @@
+alert("search for your favorite songs/artists");
+
 const videoCards = document.querySelector(".videos-card");
 const trackCards = document.querySelector(".tracks-card");
 const media = document.querySelector(".media-play");
@@ -11,8 +13,8 @@ const bodyContainer = document.querySelector(".container");
 
 videosContainer.style.opacity = 0;
 tracksContainer.style.opacity = 0;
-mediaPlayer.style.display = "none";
-videoPlayer.style.display = "none";
+// mediaPlayer.style.display = "none";
+// videoPlayer.style.display = "none";
 
 function displayLoading() {
   loader.classList.add("display");
@@ -42,11 +44,10 @@ const getContent = (search) => {
     limit: 100,
   };
   url.search = new URLSearchParams(params);
-  fetch(url, { method: "POST" })
+  fetch(url, { method: "GET" })
     .then((results) => results.json())
     .then((data) => {
       hideLoading();
-      console.log(data);
 
       data.results.map((result) => {
         let kind = `${result.kind}`;
@@ -80,7 +81,7 @@ const getContent = (search) => {
 };
 
 const playMusic = (url, image, title, artist) => {
-  media.innerHTML = `
+  mediaPlayer.innerHTML = `
        <div class="track-image" style ="background-image: url('${image}');"></div>
        <div class="para-con">
        <p class="music-title"> ${title}</p>
@@ -88,7 +89,7 @@ const playMusic = (url, image, title, artist) => {
        </div>
        <audio controls autoplay src="${url}" id="audio"></audio>
        `;
-  mediaPlayer.style.display = "block";
+  mediaPlayer.style.visibility = "visible";
   mediaPlayer.style.backgroundColor = " rgba(0, 0, 0, 0.719)";
 };
 
@@ -97,7 +98,7 @@ const playVideo = (url, title, artist) => {
     <video controls autoplay src="${url}" id="video"></video> 
     <p class="media-text">${title} - <span class="video-artistName"> ${artist}</span></p>
     `;
-  videoPlayer.style.display = "block";
+  videoPlayer.style.visibility = "visible";
   videoPlayer.style.backgroundColor = "inherit";
 };
 
