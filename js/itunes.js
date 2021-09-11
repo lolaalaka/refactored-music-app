@@ -44,7 +44,7 @@ const getContent = (search) => {
     limit: 100,
   };
   url.search = new URLSearchParams(params);
-  fetch(url, { method: "POST" })
+  fetch(url, { method: "GET" })
     .then((results) => results.json())
     .then((data) => {
       hideLoading();
