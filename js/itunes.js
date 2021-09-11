@@ -105,7 +105,7 @@ const playVideo = (url, title, artist) => {
 searchInput.addEventListener("keydown", (event) => {
   if (event.key === "Enter") {
     getContent(searchInput.value);
-    videoCards.innerHTML = "";
-    trackCards.innerHTML = "";
+    // videoCards.innerHTML = "";
+    // trackCards.innerHTML = "";
   }
 });
