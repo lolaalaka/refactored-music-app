@@ -1,4 +1,4 @@
-alert("search for your favorite songs/artists");
+// alert("search for your favorite songs/artists");
 
 const videoCards = document.querySelector(".videos-card");
 const trackCards = document.querySelector(".tracks-card");
@@ -44,7 +44,7 @@ const getContent = (search) => {
     limit: 100,
   };
   url.search = new URLSearchParams(params);
-  fetch(url, { method: "GET" })
+  fetch(url, { method: "POST" })
     .then((results) => results.json())
     .then((data) => {
       hideLoading();

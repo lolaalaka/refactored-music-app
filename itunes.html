@@ -14,17 +14,21 @@
 
   <body>
     <div class="container">
-      <i class="fas fa-search icon"></i>
-      <input
-        type="search"
-        id="search"
-        autofocus
-        autocorrect="off"
-        autocapitalize="off"
-        spellcheck="false"
-        placeholder="Search artist, songs, videos..."
-        formaction="https://itunes.apple.com/search?term=search"
-      />
+      <form
+        action="javascript:void(0);"
+        onsubmit="getContent(searchInput.value);"
+      >
+        <i class="fas fa-search icon"></i>
+        <input
+          type="search"
+          autofocus
+          id="search"
+          autocorrect="off"
+          autocapitalize="off"
+          spellcheck="false"
+          placeholder="Search artist, songs, videos..."
+        />
+      </form>
 
       <div class="linedivider"></div>
 
