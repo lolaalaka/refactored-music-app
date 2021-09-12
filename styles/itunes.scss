@@ -111,8 +111,8 @@ body {
   -webkit-appearance: none;
 
   @include bp(phonecombine) {
-    height: 70px;
-    font-size: 20px;
+    height: 25vw;
+    font-size: 2rem;
   }
 }
 .icon {
@@ -243,10 +243,10 @@ body {
 }
 .song-title {
   font-weight: bold;
-  font-size: 17px;
+  font-size: 1rem;
 
   @include bp(phonecombine) {
-    font-size: 21px;
+    font-size: 1.5rem;
   }
 }
 .song-album {
@@ -283,7 +283,8 @@ body {
   background-color: inherit;
 
   @include bp(phonecombine) {
-    width: 100%;
+    width: 100vw;
+    max-width: 100%;
     height: 85px;
     display: flex;
     display: -webkit-flex;
