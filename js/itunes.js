@@ -34,21 +34,20 @@ function hideLoading() {
 
 const getContent = (search) => {
   displayLoading();
-  //const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
-  // proxyUrl +
-  const url = new URL(" https://itunes.apple.com/search ");
-  const params = {
-    term: search,
-    media: "music",
-    entity: "musicTrack",
-    limit: 100,
-  };
-  url.search = new URLSearchParams(params);
-  fetch(url, { method: "GET" })
+  // const url = new URL(" https://itunes.apple.com/search ");
+  // const params = {
+  //   term: search,
+  //   media: "music",
+  //   entity: "musicTrack",
+  //   limit: 100,
+  // };
+  // url.search = new URLSearchParams(params);
+  const url = " https://itunes.apple.com/search?term= " + searchInput.value;
+  fetch(url, { method: "POST" })
     .then((results) => results.json())
     .then((data) => {
       hideLoading();
-
+      console.log(url, data);
       data.results.map((result) => {
         let kind = `${result.kind}`;
 
@@ -81,7 +80,7 @@ const getContent = (search) => {
 };
 
 const playMusic = (url, image, title, artist) => {
-  mediaPlayer.innerHTML = `
+  media.innerHTML = `
        <div class="track-image" style ="background-image: url('${image}');"></div>
        <div class="para-con">
        <p class="music-title"> ${title}</p>
@@ -105,7 +104,7 @@ const playVideo = (url, title, artist) => {
 searchInput.addEventListener("keydown", (event) => {
   if (event.key === "Enter") {
     getContent(searchInput.value);
-    // videoCards.innerHTML = "";
-    // trackCards.innerHTML = "";
+    videoCards.innerHTML = "";
+    trackCards.innerHTML = "";
   }
 });
