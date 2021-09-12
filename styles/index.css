@@ -172,7 +172,7 @@ body {
   background-image: url("https://images.unsplash.com/photo-1548923429-355d6c561385?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8YWxidW0lMjBjb3ZlciUyMGFydHxlbnwwfDF8MHxyZWQ%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
   height: 40px;
   width: 40px;
-  margin-top: 4px;
+  margin: 4px 5px 0 0;
   background-size: cover;
   background-repeat: no-repeat;
   -ms-grid-row: 1;
@@ -186,6 +186,7 @@ body {
 }
 
 .small-content .smalltrack-word {
+  height: 55px;
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: trackWord;

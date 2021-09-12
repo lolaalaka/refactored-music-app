@@ -231,6 +231,10 @@ input[type="search"] {
   &:hover {
     background-color: rgba(95, 82, 82, 0.13);
   }
+
+  @include bp(phonecombine) {
+    height: 120px;
+  }
 }
 
 .song-art {

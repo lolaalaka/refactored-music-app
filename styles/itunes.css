@@ -261,6 +261,12 @@ input[type="search"] {
   background-color: rgba(95, 82, 82, 0.13);
 }
 
+@media (min-width: 250px) and (max-width: 700px) {
+  .songcards {
+    height: 120px;
+  }
+}
+
 .song-art {
   width: 40px;
   height: 40px;
