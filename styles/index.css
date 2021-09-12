@@ -104,6 +104,11 @@ body {
   cursor: pointer;
 }
 
+.nav ul a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
 .nav .navlink {
   font-size: 2rem;
   padding-top: 30px;
