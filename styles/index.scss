@@ -165,7 +165,7 @@ body {
   }
 
   .smalltrack-word {
-    height: 55px;
+    height: 50px;
     grid-area: trackWord;
     color: $logoColor;
     @include hidetext();

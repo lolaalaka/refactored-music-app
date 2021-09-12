@@ -263,7 +263,7 @@ input[type="search"] {
 
 @media (min-width: 250px) and (max-width: 700px) {
   .songcards {
-    height: 120px;
+    height: 150px;
   }
 }
 
@@ -275,6 +275,13 @@ input[type="search"] {
   background-size: cover;
   background-position: center;
   margin: 10px 0 0 0;
+}
+
+@media (min-width: 250px) and (max-width: 700px) {
+  .song-art {
+    width: 60px;
+    height: 60px;
+  }
 }
 
 .text {
@@ -289,6 +296,12 @@ input[type="search"] {
   font-size: 1rem;
 }
 
+@media (min-width: 250px) and (max-width: 700px) {
+  .artistname {
+    font-size: 1.5rem;
+  }
+}
+
 .song-title {
   font-weight: bold;
   font-size: 1rem;
@@ -296,7 +309,7 @@ input[type="search"] {
 
 @media (min-width: 250px) and (max-width: 700px) {
   .song-title {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }
 

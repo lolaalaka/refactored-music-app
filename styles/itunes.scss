@@ -233,7 +233,7 @@ input[type="search"] {
   }
 
   @include bp(phonecombine) {
-    height: 120px;
+    height: 150px;
   }
 }
 
@@ -245,6 +245,11 @@ input[type="search"] {
   background-size: cover;
   background-position: center;
   margin: 10px 0 0 0;
+
+  @include bp(phonecombine) {
+    width: 60px;
+    height: 60px;
+  }
 }
 
 .text {
@@ -255,13 +260,16 @@ input[type="search"] {
 
 .artistname {
   font-size: 1rem;
+  @include bp(phonecombine) {
+    font-size: 1.5rem;
+  }
 }
 .song-title {
   font-weight: bold;
   font-size: 1rem;
 
   @include bp(phonecombine) {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }
 .song-album {
