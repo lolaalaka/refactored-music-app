@@ -105,7 +105,7 @@ input[type="search"] {
   outline: none;
   padding: 40px 0 40px 40px;
   display: block;
-  font-size: 15px;
+  font-size: 20px;
   background-color: inherit;
   color: white;
   appearance: none;
@@ -114,7 +114,8 @@ input[type="search"] {
 
   @include bp(phonecombine) {
     height: 15vh;
-    font-size: 25px;
+    font-size: 30px;
+    padding: 50px 0 50px 40px;
   }
 }
 
@@ -125,7 +126,7 @@ input[type="search"] {
   left: 10px;
 
   @include bp(phonecombine) {
-    top: 40px;
+    top: 42px;
   }
 }
 
