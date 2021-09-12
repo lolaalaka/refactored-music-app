@@ -23,43 +23,32 @@ body {
   margin: 0 auto;
   //   background-color: rgba(29, 28, 28, 0.315);
 }
+.featured-text {
+  font-size: 23px;
+}
 
 .featured {
   margin: 20px;
+  display: flex;
 
-  h3 {
-    font-size: 23px;
-
-    @include bp(smallphone) {
-      font-size: 20px;
-    }
+  @include bp(smallphone) {
+    font-size: 20px;
   }
 
   .flexcontainer {
     display: flex;
-    align-items: stretch;
-    justify-content: space-evenly;
+    overflow: auto;
 
-    @include bp(smallphone) {
-      justify-content: stretch;
-      align-items: center;
-      height: 30vh;
-      overflow-x: auto;
-    }
+    // @include bp(smallphone) {
+    // }
 
-    @include bp(midphone) {
-      justify-content: stretch;
-      align-items: center;
-      height: 40vh;
-      overflow-x: auto;
-    }
+    // @include bp(midphone) {
+    //   overflow-x: auto;
+    // }
 
-    @include bp(tablet) {
-      justify-content: stretch;
-      align-items: center;
-      height: 40vh;
-      overflow-x: auto;
-    }
+    // @include bp(tablet) {
+    //   overflow-x: auto;
+    // }
     &::-webkit-scrollbar {
       display: none;
     }
@@ -259,6 +248,10 @@ input[type="search"] {
   padding: 19px 0 19px 10%;
   @include hidetext();
 }
+
+.artistname {
+  font-size: 1rem;
+}
 .song-title {
   font-weight: bold;
   font-size: 1rem;
@@ -405,11 +398,13 @@ input[type="search"] {
   }
 
   .video-title {
+    font-size: 1.5rem;
     @include hidetext();
   }
 
   .album-name {
     @include hidetext();
+    font-size: 1rem;
   }
 }
 

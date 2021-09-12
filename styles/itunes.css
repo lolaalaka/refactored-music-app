@@ -19,16 +19,19 @@ body {
   margin: 0 auto;
 }
 
-.featured {
-  margin: 20px;
-}
-
-.featured h3 {
+.featured-text {
   font-size: 23px;
 }
 
+.featured {
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 @media (min-width: 250px) and (max-width: 400px) {
-  .featured h3 {
+  .featured {
     font-size: 20px;
   }
 }
@@ -37,51 +40,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-@media (min-width: 250px) and (max-width: 400px) {
-  .featured .flexcontainer {
-    -webkit-box-pack: stretch;
-        -ms-flex-pack: stretch;
-            justify-content: stretch;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    height: 30vh;
-    overflow-x: auto;
-  }
-}
-
-@media (min-width: 401px) and (max-width: 600px) {
-  .featured .flexcontainer {
-    -webkit-box-pack: stretch;
-        -ms-flex-pack: stretch;
-            justify-content: stretch;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    height: 40vh;
-    overflow-x: auto;
-  }
-}
-
-@media (min-width: 601px) and (max-width: 900px) {
-  .featured .flexcontainer {
-    -webkit-box-pack: stretch;
-        -ms-flex-pack: stretch;
-            justify-content: stretch;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    height: 40vh;
-    overflow-x: auto;
-  }
+  overflow: auto;
 }
 
 .featured .flexcontainer::-webkit-scrollbar {
@@ -320,6 +279,10 @@ input[type="search"] {
   text-overflow: ellipsis;
 }
 
+.artistname {
+  font-size: 1rem;
+}
+
 .song-title {
   font-weight: bold;
   font-size: 1rem;
@@ -513,6 +476,7 @@ input[type="search"] {
 }
 
 .videos .video-title {
+  font-size: 1.5rem;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -522,6 +486,7 @@ input[type="search"] {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  font-size: 1rem;
 }
 
 #audio {
