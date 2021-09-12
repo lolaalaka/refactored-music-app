@@ -132,7 +132,7 @@ body {
 #search {
   width: 100%;
   height: 50px;
-  border: none;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.411);
   outline: none;
   padding-left: 40px;
   display: block;
@@ -146,8 +146,8 @@ body {
 
 @media (min-width: 250px) and (max-width: 700px) {
   #search {
-    height: 25vw;
-    font-size: 2rem;
+    height: 15vh;
+    font-size: 1rem;
   }
 }
 
@@ -162,12 +162,6 @@ body {
   .icon {
     top: 30px;
   }
-}
-
-.linedivider {
-  width: 100%;
-  height: 1px;
-  background-color: rgba(128, 128, 128, 0.411);
 }
 
 .tracks {
