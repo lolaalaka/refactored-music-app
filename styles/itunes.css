@@ -139,6 +139,9 @@ body {
   font-size: 15px;
   background-color: inherit;
   color: white;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
 }
 
 @media (min-width: 250px) and (max-width: 700px) {
@@ -192,30 +195,30 @@ body {
   overflow-x: hidden;
 }
 
+@media (min-width: 250px) and (max-width: 700px) {
+  .tracks .tracks-card {
+    height: 30vhmax;
+  }
+}
+
 @media (min-width: 250px) and (max-width: 400px) {
   .tracks .tracks-card {
-    width: 100vw;
-    max-width: -webkit-fit-content;
-    max-width: -moz-fit-content;
-    max-width: fit-content;
+    width: 90vw;
+    max-width: 100%;
   }
 }
 
 @media (min-width: 401px) and (max-width: 600px) {
   .tracks .tracks-card {
-    width: 80vw;
-    max-width: -webkit-fit-content;
-    max-width: -moz-fit-content;
-    max-width: fit-content;
+    width: 90vw;
+    max-width: 100%;
   }
 }
 
 @media (min-width: 601px) and (max-width: 900px) {
   .tracks .tracks-card {
     width: 80vw;
-    max-width: -webkit-fit-content;
-    max-width: -moz-fit-content;
-    max-width: fit-content;
+    max-width: 100%;
   }
 }
 
@@ -308,6 +311,12 @@ body {
   font-size: 17px;
 }
 
+@media (min-width: 250px) and (max-width: 700px) {
+  .song-title {
+    font-size: 21px;
+  }
+}
+
 .song-album {
   margin-top: 19px;
   width: 50%;
@@ -315,6 +324,12 @@ body {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+@media (min-width: 250px) and (max-width: 700px) {
+  .song-album {
+    font-size: 21px;
+  }
 }
 
 .sectionTwo {
@@ -350,12 +365,11 @@ body {
 @media (min-width: 250px) and (max-width: 700px) {
   .media-play {
     width: 100%;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
+    height: 85px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    display: -webkit-flex;
     position: fixed;
     top: 50px;
     left: 0;

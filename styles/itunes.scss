@@ -106,6 +106,9 @@ body {
   font-size: 15px;
   background-color: inherit;
   color: white;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
 
   @include bp(phonecombine) {
     height: 70px;
@@ -145,19 +148,23 @@ body {
     overflow-y: scroll;
     overflow-x: hidden;
 
+    @include bp(phonecombine) {
+      height: 30vhmax;
+    }
+
     @include bp(smallphone) {
-      width: 100vw;
-      max-width: fit-content;
+      width: 90vw;
+      max-width: 100%;
     }
 
     @include bp(midphone) {
-      width: 80vw;
-      max-width: fit-content;
+      width: 90vw;
+      max-width: 100%;
     }
 
     @include bp(tablet) {
       width: 80vw;
-      max-width: fit-content;
+      max-width: 100%;
     }
 
     @include bp(desktop) {
@@ -237,12 +244,20 @@ body {
 .song-title {
   font-weight: bold;
   font-size: 17px;
+
+  @include bp(phonecombine) {
+    font-size: 21px;
+  }
 }
 .song-album {
   margin-top: 19px;
   width: 50%;
   padding-left: 10%;
   @include hidetext();
+
+  @include bp(phonecombine) {
+    font-size: 21px;
+  }
 }
 
 .sectionTwo {
@@ -269,8 +284,9 @@ body {
 
   @include bp(phonecombine) {
     width: 100%;
-    height: fit-content;
+    height: 85px;
     display: flex;
+    display: -webkit-flex;
     position: fixed;
     top: 50px;
     left: 0;
