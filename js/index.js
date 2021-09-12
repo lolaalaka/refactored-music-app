@@ -68,66 +68,90 @@ modalClose.onclick = () => {
 
 let trackControl = [
   {
-    nameOfTrack: "MONDAY COMES",
-    artistName: "Late",
-    imageUrl:
-      "https://images.pexels.com/photos/3328337/pexels-photo-3328337.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    nameOfTrack: "HIGH",
+    artistName: "Adekunle Gold, Davido",
+    imageUrl: "https://i.ytimg.com/vi/juBnNBm0cPw/maxresdefault.jpg",
     musicPath:
-      "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/ccCommunity/Chad_Crouch/Arps/Chad_Crouch_-_Shipping_Lanes.mp3",
+      "https://9jaflaver.com/wp-content/uploads/2021/09/Adekunle_Gold_Ft_Davido_High_9jaflaver.com_.mp3",
   },
 
   {
-    nameOfTrack: "EXOTICA",
-    artistName: "Juan",
+    nameOfTrack: "Ke Star Remix",
+    artistName: "Focalistic",
     imageUrl:
-      "https://images.unsplash.com/photo-1600932717369-d507b606a25d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDl8fGFsYnVtJTIwYXJ0fGVufDB8MXwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      "https://i1.sndcdn.com/artworks-RCbU370yppeHiXjo-k9jIQQ-t500x500.jpg",
     musicPath:
-      "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/Oddio_Overplay/Juanitos/Exotica/Juanitos_-_06_-_Exotica.mp3",
+      "https://9jaflaver.com/wp-content/uploads/2021/03/Focalistic_Ft_Davido_Ke_Star_Remix_9jaflaver.com_.mp3",
   },
 
   {
-    nameOfTrack: "Frost Wire",
-    artistName: "Kirk",
+    nameOfTrack: "BLOODY SAMARITAN",
+    artistName: "Arya Starr",
     imageUrl:
-      "https://images.unsplash.com/photo-1558114073-fd334d98bbc5?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzN8fGFsYnVtJTIwY292ZXJzfGVufDB8MXwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      "https://leurr.com/wp-content/uploads/2021/02/ayrastarr_1465341814270520187144054322421283590920030n.jpg",
     musicPath:
-      "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/ccCommunity/KIRK/FrostWire_Creative_Commons_Mixtape_Vol_5/KIRK_-_02_-_Dont_Go.mp3",
+      "https://9jaflaver.com/wp-content/uploads/2021/07/Ayra_Starr_Bloody_samaritan_9jaflaver.com_.mp3",
   },
 
   {
-    nameOfTrack: "SPRAY PAINT IT GOLD",
-    artistName: "Little Glass Men",
-    imageUrl:
-      "https://images.unsplash.com/photo-1556139943-4bdca53adf1e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80",
+    nameOfTrack: "BOUNCE",
+    artistName: "Ruger",
+    imageUrl: "https://i.ytimg.com/vi/F9c4n7Wqtbk/maxresdefault.jpg",
     musicPath:
-      "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/Music_for_Video/Little_Glass_Men/The_Age_of_Insignificance/Little_Glass_Men_-_07_-_Spray_paint_it_Gold.mp3",
+      "https://9jaflaver.com/wp-content/uploads/2021/05/Ruger_Bounce_9jaflaver.com_.mp3",
   },
 
   {
-    nameOfTrack: "SILLY BUS",
-    artistName: "Captive Portal",
+    nameOfTrack: "KISS ME LIKE YOU MISS ME",
+    artistName: "Ckay",
     imageUrl:
-      "https://images.unsplash.com/photo-1605798748793-afa30efa801e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OTR8fGFsYnVtJTIwYXJ0fGVufDB8MXwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      "https://i1.wp.com/www.vanguardngr.com/wp-content/uploads/2019/08/ckay.gif?fit=1500%2C2177&ssl=1",
     musicPath:
-      "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Captive_Portal/Somethign_Abbadat_-_EP/Captive_Portal_-_05_-_T-Shirts_Silly_Bus.mp3",
+      "https://9jaflaver.com/wp-content/uploads/2021/02/Ckay_Kiss_Me_Like_You_Miss_Me_9jaflaver.com_.mp3",
   },
 
   {
-    nameOfTrack: "LONELY SPIDER",
-    artistName: "Cullah",
+    nameOfTrack: "PERU",
+    artistName: "Fireboy DML;",
     imageUrl:
-      "https://images.unsplash.com/photo-1511867674775-1176e6174052?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mzh8fGFsYnVtJTIwY292ZXJzfGVufDB8MXwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      "https://guardian.ng/wp-content/uploads/2021/07/maxresdefault-9-e1626881315978.jpg",
     musicPath:
-      "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/Music_for_Video/Cullah/Cullahmity/Cullah_-_04_-_Lonely_Spider.mp3?download=1",
+      "https://9jaflaver.com/wp-content/uploads/2021/07/Fireboy_Peru_9jaflaver.com_.mp3",
   },
 
   {
-    nameOfTrack: "FOG LAKE",
-    artistName: "Kerosene",
+    nameOfTrack: "FEELING",
+    artistName: "LADIPOE, Buju",
     imageUrl:
-      "https://images.unsplash.com/photo-1602283361240-15f7e18ccb87?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTQwfHxhbGJ1bSUyMGFydHxlbnwwfDF8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      "https://grungecake.com/wp-content/uploads/2021/05/ladipoe-feeling-buju-grungecake-thumbnail-scaled.jpg",
     musicPath:
-      "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/Ziklibrenbib/Fog_Lake/Dragonchaser/Fog_Lake_-_04_-_kerosene.mp3?download=1",
+      "https://9jaflaver.com/wp-content/uploads/2021/05/LadiPoe_Ft_Buju_Feeling_9jaflaver.com_.mp3",
+  },
+
+  {
+    nameOfTrack: "PAY ME",
+    artistName: "Oxlade",
+    imageUrl:
+      "https://9jaflaver.com/wp-content/uploads/2021/08/Oxlade-Pay-Me-300x300.png",
+    musicPath:
+      "https://9jaflaver.com/wp-content/uploads/2021/08/Oxlade_Pay_Me_9jaflaver.com_.mp3",
+  },
+
+  {
+    nameOfTrack: "POLICE",
+    artistName: "Joeboy",
+    imageUrl: "https://i.ytimg.com/vi/H5thBLIAnw8/maxresdefault.jpg",
+    musicPath:
+      "https://9jaflaver.com/wp-content/uploads/2021/02/Joeboy_Police_9jaflaver.com_.mp3",
+  },
+
+  {
+    nameOfTrack: "ESSENCE REMIX",
+    artistName: "Wizkid ft Tems & Justin Bieber",
+    imageUrl:
+      "https://9jaflaver.com/wp-content/uploads/2021/08/Wizkid-essense-remix-300x300.png",
+    musicPath:
+      "https://9jaflaver.com/wp-content/uploads/2021/08/WizKid_Essence_Remix_Ft_Justin_Bieber_And_Tems_9jaflaver.com_.mp3",
   },
 ];
 
